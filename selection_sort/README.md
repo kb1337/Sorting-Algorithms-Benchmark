@@ -24,25 +24,25 @@ void sort(int *array, int array_size)
 --- Array with Random Values
 [+] Average number of comparison   : 4950
 [+] Average number of exchange     : 100
-[+] Average time                   : 0
+[+] Average time                   : 0.000018
 
 
 --- Array with Ordered Values
 [+] Number of comparison           : 4950
 [+] Number of exchange             : 100
-[+] Time                           : 0
+[+] Time                           : 0.000015
 
 
 --- Array with Reverse Ordered Values
 [+] Number of comparison           : 4950
 [+] Number of exchange             : 100
-[+] Time                           : 0
+[+] Time                           : 0.000016
 
 
 --- Array with Same Values
 [+] Number of comparison           : 4950
 [+] Number of exchange             : 100
-[+] Time                           : 0
+[+] Time                           : 0.000014
 ```
 
 </details>

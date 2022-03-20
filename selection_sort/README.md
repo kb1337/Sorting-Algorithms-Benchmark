@@ -53,7 +53,7 @@ void sort(int *array, int array_size)
 
 ## Time Complexities
 . | Array Size | Number of Comparison | Number of Exchange | Time Complexity 
---- | --- | --- | --- | --- 
+--- | :---: | :---: | :---: | :---: 
 Best Case | N | N*(N-1)/2 | N | O(N^2)
 Worst Case | N | N*(N-1)/2 | N | O(N^2)
 Average Case | N | N*(N-1)/2 | N | O(N^2)
@@ -61,7 +61,7 @@ Average Case | N | N*(N-1)/2 | N | O(N^2)
 <br/>
 
 . | Array Size | Number of Comparison | Number of Exchange | Time Complexity
---- | --- | --- | --- | ---
+--- | :---: | :---: | :---: | :---:
 Array with Ordered Values | 100 | 4950 | 100 | O(N^2)
 Array with Same Values | 100 | 4950 | 100 | O(N^2)
 Array with Reverse Ordered Values | 100 | 4950 | 100 | O(N^2)
@@ -69,8 +69,8 @@ Array with Random Values | 100 | 4950 | 100 | O(N^2)
 
 <br/>
 
-. | Array Size | Number of Comparison | Number of Exchange | Time Passed(sec)
---- | --- | --- | --- | ---
+. | Array Size | Number of Comparison | Number of Exchange | Time Passed (sec)
+--- | :---: | :---: | :---: | :---:
 Array with Ordered Values | 100000 | 704982704 | 100000 | 15
 Array with Same Values | 100000 | 704982704 | 100000 | 15
 Array with Reverse Ordered Values | 100000 | 704982704 | 100000 | 15

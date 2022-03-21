@@ -15,9 +15,10 @@ void insertion_sort(int *array, int array_size)
         array[j] = key;
     }
 }
+
 void insertion_sort_benchmark(int *array, int array_size, long *numberOfComparison, long *numberOfExchange, double *timePassed)
 {
-    *numberOfComparison = 1;
+    *numberOfComparison = 0;
     *numberOfExchange = 0;
     clock_t start = clock();
 
@@ -25,7 +26,7 @@ void insertion_sort_benchmark(int *array, int array_size, long *numberOfComparis
     {
         int key = array[i];
         int j = i;
-        while ((*numberOfComparison)++ && j > 0 && array[j - 1] > key)
+        while (++(*numberOfComparison) && j > 0 && array[j - 1] > key)
         {
             (*numberOfExchange)++;
             array[j] = array[j - 1];

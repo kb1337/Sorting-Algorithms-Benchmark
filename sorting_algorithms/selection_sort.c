@@ -15,12 +15,8 @@ void selection_sort(int *array, int array_size)
     }
 }
 
-void selection_sort_benchmark(int *array, int array_size, int *numberOfComparison, int *numberOfExchange, double *timePassed)
+void selection_sort_benchmark(int *array, int array_size, long *numberOfComparison, long *numberOfExchange)
 {
-    *numberOfComparison = 0;
-    *numberOfExchange = 0;
-    clock_t start = clock();
-
     for (int i = 0; i < array_size; i++)
     {
         int min = i;
@@ -36,7 +32,4 @@ void selection_sort_benchmark(int *array, int array_size, int *numberOfCompariso
         array[i] = array[min];
         array[min] = temp;
     }
-
-    clock_t end = clock();
-    *timePassed = (double)(end - start) / CLOCKS_PER_SEC;
 }

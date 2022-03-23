@@ -30,6 +30,6 @@ Average Case | N | N*(N+1)/4 | N | O(N^2)
 
 . | Array Size | Number of Comparison | Number of Exchange | Time Complexity 
 --- | :---: | :---: | :---: | :---: 
-Average Case | N | - | N*logN | O(N*logN)
+Average Case | N | - | - | O(N*logN)
 Best Case | N | - | N-1 | O(N*logN)
-Worst Case | N | N^2/2 | N-1 | O(N^2)
+Worst Case | N | - | N-1 | O(N^2)

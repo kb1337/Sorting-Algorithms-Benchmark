@@ -4,8 +4,8 @@
 #include "sorting_algorithms/quick_sort.h"
 #include <time.h>
 
-#define SIZE 10000
-#define NUMBER_OF_EXPERIMENTS 5
+#define SIZE 1000
+#define NUMBER_OF_EXPERIMENTS 10
 
 #define ALG_COUNT 3
 void (*ALGORITHMS_PTR[ALG_COUNT])() = {selection_sort_benchmark, insertion_sort_benchmark, quick_sort_adapter};
@@ -16,7 +16,7 @@ int main(void)
     for (int i = 0; i < ALG_COUNT; i++)
     {
         int *array = NULL;
-        long numberOfComparison = 0, numberOfExchange = 0;
+        long numberOfComparison, numberOfExchange;
         long totalNumberOfComparison = 0, totalNumberOfExchange = 0;
         double timePassed = 0, totalTime = 0;
         clock_t start;
@@ -31,6 +31,8 @@ int main(void)
         {
             array = GenerateRandomValues(array, SIZE);
             // PrintArray(array, SIZE);
+            numberOfComparison = 0;
+            numberOfExchange = 0;
             start = clock();
             (*ALGORITHMS_PTR[i])(array, SIZE, &numberOfComparison, &numberOfExchange);
             end = clock();

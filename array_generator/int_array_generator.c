@@ -1,6 +1,6 @@
 #include "int_array_generator.h"
 
-int *GenerateRandomValues(int *array, int N)
+int *generate_random_values(int *array, int N)
 {
     array = realloc(array, N * sizeof(int));
 
@@ -12,7 +12,7 @@ int *GenerateRandomValues(int *array, int N)
     return array;
 }
 
-int *GenerateOrderedValues(int *array, int N)
+int *generate_ordered_values(int *array, int N)
 {
     array = realloc(array, N * sizeof(int));
 
@@ -22,7 +22,7 @@ int *GenerateOrderedValues(int *array, int N)
     return array;
 }
 
-int *GenerateReverseOrderedValues(int *array, int N)
+int *generate_reverse_ordered_values(int *array, int N)
 {
     array = realloc(array, N * sizeof(int));
 
@@ -32,7 +32,7 @@ int *GenerateReverseOrderedValues(int *array, int N)
     return array;
 }
 
-int *GenerateSameValue(int *array, int N)
+int *generate_same_values(int *array, int N)
 {
     array = realloc(array, N * sizeof(int));
 
@@ -42,7 +42,7 @@ int *GenerateSameValue(int *array, int N)
     return array;
 }
 
-void PrintArray(int *array, int N)
+void print_array(int *array, int N)
 {
     if (NULL == array)
         return;

@@ -4,10 +4,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int *GenerateRandomValues(int *array, int N);
-int *GenerateOrderedValues(int *array, int N);
-int *GenerateReverseOrderedValues(int *array, int N);
-int *GenerateSameValue(int *array, int N);
-void PrintArray(int *array, int N);
+int *generate_random_values(int *array, int N);
+int *generate_ordered_values(int *array, int N);
+int *generate_reverse_ordered_values(int *array, int N);
+int *generate_same_values(int *array, int N);
+void print_array(int *array, int N);
 
 #endif
